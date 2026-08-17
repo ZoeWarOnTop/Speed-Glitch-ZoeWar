@@ -1,1 +1,146 @@
-return(function(...)local w={"jW+h5N\'D";"}3jJbnjU=";"jChXeN^$!K_9;XHi","jstYl-9c,bPeZrgd";"}WqdmfiM0";"}4RVanjZEfq6k3tBY","jLg7Pg\"(I[PsRE3D>U<","}7RXmzmBZqtI03oJffL==","jst&s`9pS&[^,;XV>&";"jl+RqL\'5CsQ\'i1G`","}nqJ0WO==";"}UjJw3NO=","jetRj@6IqDfCbT3bL1U";"jCh`e5,%U:k^\'elB";"}UjVdzRSo7qH4zt8XfiM0WqBm";"}utJ9f4==";"jOs1D","jq`q7`\'a7";"jBJ3)LOQ%hK\"S1-5>h";"}7RHVniO=";"j>2IX-sfn-(9<[:";"j>FZ1#eZnqHstYl-9K6:G9&";"}ZRB0UDZV3jU=","}i68Tfqh=","j*-iK19<,*3\"3";"jq!jmjW*c,(\'D","}3uJZqY3FgmfPztBHF4==";"jCIks+q`q7`\'a7";"jq=OFtquQ\"Yet_2a,-BB";"jClY[/";"jWOJF_WYK0Ql\"ZpclH+","jq!jmjW*c,(\'5BU&9Qd","}gpMTUtHZ4YdJWiM770X=";"}Zqd6n4==","}BUZanuG=";"}qL==";"}uq86zRBe3iZ0nRhH4RHa7RT=","jW?0;<\"[s[GLg&D=,)";"jq!SL[96(V*9Qd";"}ZtSyfIfazpg04RVanj4=";"}UR86ztgSURJyz0Mknj4=";"jF(+rV,%O.R";"}uq8RfUZaztBo3jSknL==","}BUZan4==";"}URSsf4==";"}ZtSyfIfazpg04RVanjZ5fYgT7igm";"}q4==","j><\\<dWs)Q7","jBThtNOD6CO\"4eFm","jsj`dk9<en_W:P","}7pgYFRJCnqV0uYTh";"}BjBh3O==","}4tS5fBZd1IJi3IBl","jefmH";"j><QR","}u6J/3BJEUuOXEDlMgJY=";"}BigSzYSyzxB0URBw3tSof4==";"j*-iK19<e%","ju#flk";"j9G@ohs^V8";"js0i-`9;]Ha\"3";"}BigSzYSyzxB0UDZV3jU=";"}BjBh3Jga1tU=";"}uj8o7qH4njJdfiG=";"jWn,.%eI/dt*_ZsK";"}uRftzRB0","}BilXfiMUnDMmnX==","}4igmfq6bnxSFWqdS7iMqfqHk7RS014==";"j9Y:a39<$f$^\\^%)UY";"jq]S^)\'1qp","}BtBo3j8wFX==","j^,\"qI","}fjBtfiG=","}36JE4RFXzqZXBJS61xG=";"}Zj80";"}1xSJup403j3m1tHg";"}ERBd4R8Yf4==","j\"Yfj2\'1?","}ZjSm7R8yntBo3O==","}ZjSSfO==";"j9<[gV6IKtjFLTf!","}i68antZS1O==","j*om\"7","}uq86zRBe3iZ0nRhH";"jOD6E7";"jBTKA!","}BogR3JSZBSBZztgG";"j^3$RhW:X";"jO:&7W9<en_W:P";"}UU3jn0Jen6f5qoVB";"jst&s`96T-R*r*+@_E";"}4RJy4R8TnjSYf4==","}EpB9zjSyfX==","}CNJgFR9fgYJpqjYXZ0z=","j><\\j-^WE@[eZrgd","}Bj8knO==";"}uj8kW6fS7DZkzL==";"j*-,e%^eU`A","}URgVnjU=";"jF(:.4\"Ymj_9&","jCh`0Xe`","}3U6BzRSuuIZaUISSEX==","jL%2JNeI=-m\'3`T5,0V","}zoVqqpaV4UVMqBB5niF=","j*om\"7E3","}4tJoWR3wnDByfIgknj8wFX==";"}UD3anq6antz=";"j\"pU#o","}4DBwztBy3IgVnqBw74==";"}ExB97qdkWq4=","}uq86zRBgnDfSnqBy3O==";"jsfnGa^9&7K\'Irn_","}BjBh3IM63xZknL==","j*om\"kejl","}4mO=";"}4BZPgDfFuYSREJly7L==";"jsu","}4R8wntBwUtJYWiBm";"}40fw7q6S";"}BUSNnDMyfiG=","}Z0SbfDL6zqT6EoYH";"jlJ:HM\',c05P\\fP;\"6l";"j>O1p[^,Zt-^>","jB9:SXe7YHJ\"LPVq","jst&s`96T-ROQ0Sjs,[","jCh`m%\"\'","jBF","j><\\j-^Wi4cWs`","jC7W4pEZda$ChX%-q-","}1NSUnq9GERdIUp3wuL==";"}BigSzYSyzxB0BxSXf4==","}UR9a7tSYWB8xWj8m3J8l7DZa3tU=","}4R8yntBo3O==";"}4DBm3j89UjVdzRSo7qH4zt8XfiM0WqBm";"jl9%[s^$!4]9&","}4RVVnt3SfO==","j>FZ1#eZnqHsj=Z:*om\"7"}for k,J in ipairs({{1,137};{1,20},{21,137}})do while J[1]<J[2]do w[J[1]],w[J[2]],J[1],J[2]=w[J[2]],w[J[1]],J[1]+1,J[2]-1 end end local function k(k)return w[k-53226]end do local k={J=5;d=57,E=18,X=48,u=19,P=11;o=35;y=46;["9"]=45;O=0;z=28,j=6,H=49,G=8;L=32;C=14;["1"]=30,["2"]=62,["/"]=42;f=25,["7"]=24,w=50;a=41;m=51,g=13,b=34,n=27,["0"]=52;Q=43,t=38;U=20;x=7,s=58,["8"]=61;i=23;D=55;Y=36;Z=17,S=37,W=26,F=12;h=56,I=4,B=21;T=44;V=33,k=47;v=10;["3"]=29,l=1;M=9,["6"]=53,R=54,K=59,e=2;r=40,N=3;A=31;["4"]=16,c=60;q=22,p=39,["5"]=15;["+"]=63}local J=math.floor local r=string.char local b=string.sub local C=type local B=table.concat local W=string.len local y=w local g={_=13;O=22,["&"]=39;P=29,["0"]=68;["="]=3,p=19,m=77,G=78;["\""]=33;["+"]=81,J=2,C=27;["@"]=62;[":"]=80;A=17;K=48;F=24;["["]=44;b=12;["."]=58;Q=49,a=59;d=74;S=43;["5"]=61;W=31,[","]=34,T=7,R=14,e=35,s=26;["<"]=51,[">"]=23;["]"]=83;["8"]=4,i=6;["("]=73,f=40;["7"]=67;["-"]=72,g=45,["!"]=56,["*"]=25,X=84,["`"]=57;r=9;["3"]=63;c=46,k=52,Z=41;B=28,q=21,U=20;Y=75,["1"]=66,j=42,H=1,["2"]=79,M=0,V=64,["9"]=32,u=30;["^"]=37;["%"]=71;[";"]=50,t=69,h=11;["6"]=18;L=16;["#"]=55;n=82,["\'"]=36,["$"]=8;N=65,l=38;I=10,D=54,["/"]=76;["?"]=53;[")"]=60,o=70,E=15;["\\"]=5,["4"]=47}local Y=table.insert for w=1,#y,1 do local L=y[w]if C(L)=="string"then local C=b(L,1,1)if C=="}"then L=b(L,2)local C=W(L)local g={}local I=1 local H=0 local O=0 while I<=C do local w=b(L,I,I)local B=k[w]if B then H=H+B*(64^((3-O)))O=O+1 if O==4 then O=0 local w=J(H/65536)local k=J((H%65536)/256)local b=H%256 Y(g,r(w,k,b))H=0 end elseif w=="="then Y(g,r(J(H/65536)))if I>=C or b(L,I+1,I+1)~="="then Y(g,r(J((H%65536)/256)))end break end I=I+1 end y[w]=B(g)elseif C=="j"then L=b(L,2)local k=W(L)local C={}local I=1 while I<=k do local w=(k-I)+1 local B=w>=5 and 5 or w local W=0 local y=B>1 for w=0,4,1 do local k if w<B then local J=b(L,I+w,I+w)k=g[J]if not k then y=false break end else k=84 end W=W*85+k end if y then local w=J(W/16777216)%256 local k=J(W/65536)%256 local b=J(W/256)%256 local y=W%256 if B==5 then Y(C,r(w,k,b,y))elseif B==4 then Y(C,r(w,k,b))elseif B==3 then Y(C,r(w,k))elseif B==2 then Y(C,r(w))end end I=I+B end y[w]=B(C)end end end end return(function(w,C,y,r,B,W,b,I,X,h,M,J,K,H,S,N,Y,z,L,O,g,A)A,L,I,z,X,Y,O,H,M,K,g,S,h,N,J=function(w,k)local r=H(k)local b=function(b,C,B,W,y)return J(w,{b,C;B,W;y},k,r)end return b end,function()I=I+1 Y[I]=1 return I end,0,function(w,k)local r=H(k)local b=function(b,C,B)return J(w,{b;C;B},k,r)end return b end,function(w,k)local r=H(k)local b=function(...)return J(w,{...},k,r)end return b end,{},function(w)local k,J=1,w[1]while J do Y[J],k=Y[J]-1,k+1 if 0==Y[J]then Y[J],g[J]=nil,nil end J=w[k]end end,function(w)for k=1,#w,1 do Y[w[k]]=1+Y[w[k]]end if b then local J=b(true)local r=B(J)r[k(53328)],r[k(53305)],r[k(53270)]=w,O,function()return 1911739 end return J else return C({},{[k(53305)]=O;[k(53328)]=w;[k(53270)]=function()return 1911739 end})end end,function(w,k)local r=H(k)local b=function(b,C,B,W)return J(w,{b,C,B;W},k,r)end return b end,function(w,k)local r=H(k)local b=function(b)return J(w,{b},k,r)end return b end,{},function(w,k)local r=H(k)local b=function()return J(w,{},k,r)end return b end,function(w)Y[w]=Y[w]-1 if Y[w]==0 then Y[w],g[w]=nil,nil end end,function(w,k)local r=H(k)local b=function(b,C)return J(w,{b,C},k,r)end return b end,function(J,b,C,B)local o,p,H,Y,c,i,br,rr,V,y,kr,Z,R,j,T,s,v,I,f,O,d,Jr,U,t,u,Q,G,l,F,x,a,q,m,wr,E,X,n,D,P,e while J do if 8331311>J then if J>4350301 then if J<6492931 then if J>5987522 then if 6365358>J then if 6077660>J then Y=k(53272)y=g[C[4]]J=y[Y]Y=J J=not Y J=J and 11580972 or 6155493 elseif 6159896>J then J=k(53286)J,y=Y[J],k(53246)J=J(Y,y)I,y=J,k(53356)O,J=not I,k(53292)J=Y[J]J=J(Y,y)H=J J,y=O and 9758515 or 7243731,O elseif 6262236>J then J=y and 2622741 or 7434409 else I=y J=not I J=J and 2050213 or 519491 end else if 6399283>J then J=y and 913020 or 5502276 elseif J<6458901 then J,y=w[k(53230)],{}else J,I,Y,y=w[k(53350)],nil,nil,{}end end else if 5520805>J then if J<4539872 then J,y=w[k(53340)],{}elseif J<4949766 then u,O=k(53280),k(53240)H=Y[O]v=w[u]u=k(53240)X=v[u]v,J=k(53235),2744781 O=X[v]I=H==O y=I elseif 5354381>J then Y,I,X=b[1],b[2],k(53280)O=w[X]Y,X=nil,k(53268)H=O[X]O=k(53353)y=H[O]J=I==y I,y=nil,{}g[C[1]]=J J=w[k(53284)]else Y=k(53272)y=g[C[4]]J=y[Y]J=J and 3543440 or 5999827 end else if J<5750867 then J=g[C[1]]y=J()J=6489779 elseif J<5968809 then Y=g[C[1]]I=k(53228)y=Y[I]Y=k(53343)J=y[Y]I=g[C[2]]Y=J y=Y-I I=k(53346)J=y[I]I=J J=Y g[C[2]]=J J,y=w[k(53231)],{I}else Y=g[C[1]]J,y=Y and 7000497 or 13621515,Y end end end else if 7237845>J then if 6838269>J then if 6509278>J then Q=k(53257)i=w[Q]Q=k(53266)j=i[Q]E=g[C[7]]T=g[C[11]]l=E-T E=32 Q=l/E l,E=0,1 i=j(Q,l,E)Q=2.4 j=i^Q i=j l=g[C[12]]x=g[C[13]]R=g[C[12]]V=k(53282)T=x-R E=T*i Q=l+E E=g[C[14]]l=Q*E Q,x=l,k(53317)T=w[x]x,R=k(53300),k(53236)E=T[x]x=X[R]m=X[V]R=0 T=E(x,R,m)R=k(53346)x=T[R]R=.1 E=x>R J=E and 12194437 or 6766116 elseif J<6644294 then J=j i=J J,j=u and 15852841 or 9502945,u elseif 6784010>J then J=13338417 x=-v T=x else H,I,Y=k(53342),k(53301),b[1]I=Y[I]I=I(Y,H)J,y=I and 13452927 or 16012494,I end else if J<6937565 then I=h(I)Y,J=nil,w[k(53239)]H=h(H)y={}elseif J<7116228 then Y=g[C[2]]J,y=13621515,Y else y,I={},k(53248)Y=w[I]I=k(53247)J=Y[I]I=g[C[1]]Y=J(I)J=w[k(53348)]end end else if J>7793587 then if 8109547>J then H,Y,X,y=k(53264),k(53234),40,k(53298)J=g[C[2]]J[y]=Y J=g[C[2]]y=k(53352)I=w[H]H=k(53306)Y=I[H]O,H=40,40 I=Y(H,O,X)J[y]=I J=6428023 elseif J<8221334 then y=g[X]rr=k(53278)D=h(D)J=y[rr]P,y=nil,k(53242)y,I=J[y],nil d=h(d)G=h(G)rr=z(14817422,{R;p;m,X,a,wr;n;l,E,v;x,i;Q;T})v=h(v)j=h(j)y=y(J,Jr)p=h(p)o=h(o)l=h(l)y=k(53232)J=H[y]m=h(m)Jr=nil t=h(t)e=h(e)V=h(V)wr=h(wr)a=h(a)Q=h(Q)s=h(s)T=h(T)n=h(n)Z=nil c=h(c)U=h(U)O=h(O)y=k(53242)F=h(F)u=h(u)q=h(q)y=J[y]y=y(J,rr)J=g[f]X=h(X)E=h(E)x=h(x)R=h(R)kr=h(kr)f=h(f)y=J()J=w[k(53277)]i=h(i)y,H={},nil else Y,u,X,J,y,O,v,H,I=nil,nil,nil,w[k(53273)],{},nil,nil,nil,nil end else if 7339070>J then J,O=9758515,not H y=O elseif 7506139>J then J=w[k(53238)]Y=h(Y)y={}else y=g[C[5]]Y=y()J=15226503 end end end end else if J<2504035 then if 1801204>J then if 716255>J then if 136374>J then v,O=k(53244),k(53303)u=L()y,Y=k(53354),b l=L()F,H=k(53295),k(53296)R=L()X=L()a,I=k(53281),k(53304)J=w[y]c=L()y=k(53335)y=J[y]E=L()y=y(J,I)I=y y=k(53354)J=w[y]y=k(53335)y=J[y]y=y(J,H)H=y y=k(53354)j=L()J=w[y]x=L()y=k(53335)y,q=J[y],120 y=y(J,O)V=0 O=L()g[O]=y y=k(53310)J=I[y]i=L()g[X]=J y=w[v]v=k(53355)J=y[v]v=L()m=k(53228)g[v]=J J=4 g[u]=J J,o=300,50 g[j]=J Q=L()J=3 g[i]=J J=42 g[Q]=J s=L()n,J=k(53228),70 g[l]=J P=k(53294)T=L()J=.16 g[E]=J J=1.65 g[T]=J Z,J=k(53271),18 g[x]=J J=314748>16312652 g[R]=J y=w[m]m=k(53300)J=y[m]U,m=0,0 p=g[u]y=J(m,V,p)m=L()V=L()G=L()g[m]=y y,J=nil,nil g[V]=J p=L()g[p]=y e=g[v]y=e[n]e=k(53343)J=y[e]e=L()n=L()g[e]=J J=0 g[n]=J J=8478577>=13995287 g[G]=J J={}g[c]=J y=w[P]P=k(53300)J=y[P]P=k(53307)y=J(P)P=y y,J,rr,wr=k(53255),k(53262),k(53272),k(53237)P[J]=y J,y=k(53358),14860110<1414860 P[J]=y J=k(53360)y=g[X]F=y[F]F=F(y,Z)P[J]=F F=k(53294)y=w[F]F=k(53300)J=y[F]F=k(53359)y=J(F)F=L()Z=k(53260)g[F]=y J=g[F]y=k(53262)J[y]=Z J=g[F]f=w[a]a,y=k(53300),k(53291)Z=f[a]a=0 f=Z(a,q,U,o)q=-60 J[y]=f J=g[F]a,y=k(53281),k(53344)f=w[a]a=k(53300)Z=f[a]a,U,o=.5,.8,0 f=Z(a,q,U,o)a=k(53264)J[y]=f y=k(53352)J=g[F]f=w[a]q,a=40,k(53306)Z=f[a]o,U,a=k(53283),40,40 f=Z(a,q,U)J[y]=f D=L()q,a,y=255,k(53264),k(53274)J=g[F]f=w[a]U,a=255,k(53306)Z=f[a]a=255 f=Z(a,q,U)J[y]=f y,Z,q=k(53298),k(53234),k(53280)J=g[F]J[y]=Z J=g[F]a=w[q]q=k(53331)f=a[q]d,y,a=nil,k(53331),k(53287)Z=f[a]J[y]=Z Z,y=18,k(53309)J=g[F]a=k(53290)J[y]=Z y,Z=k(53275),7026556>11806479 J=g[F]U=L()J[y]=Z y=k(53360)J=g[F]q,Z=8,P J[y]=Z Z=k(53294)y=w[Z]Z=k(53300)J=y[Z]Z=k(53229)y=J(Z)f=w[a]J,Z,a=k(53227),y,k(53300)y=f[a]a=0 f=y(a,q)Z[J]=f J=k(53360)y=g[F]q=L()t=L()f=L()Z[J]=y a=L()J=N(3089862,{R;F})g[f]=J J=N(16465997,{R;X,u,V;p;m})g[a]=J J=M(9167044,{V;p})g[q]=J J=z(10763574,{R,f,X;a,q})g[U]=J y=g[F]J=y[o]y=k(53242)o=g[U]y=J[y]y=y(J,o)o=k(53237)y=g[O]J=y[o]o=z(1812611,{U})y=k(53242)y=J[y]y=y(J,o)J,y,o=nil,nil,nil g[s]=J g[t]=y g[D]=o o=L()g[o]=d d=L()J=z(1712311,{D,F,o})g[d]=J y=g[F]J=y[wr]y=k(53242)wr=K(15486449,{s,D;F,o})y=J[y]y=y(J,wr)y=g[F]wr=k(53341)J=y[wr]y=k(53242)y=J[y]wr=M(4000834,{t})y=y(J,wr)y=g[O]wr=k(53341)J=y[wr]y=k(53242)wr=K(14588203,{t;s;d})y=J[y]y=y(J,wr)wr=L()J=A(5962400,{v;e})g[wr]=J kr=L()J=K(15838781,{c})g[kr]=J y=g[X]J=M(8561311,{kr,G;V,p;c;R,j;O,a})Jr=J J=y[rr]J=J and 2114033 or 8209790 elseif 307528>J then J=7454217<=3216159 g[C[2]]=J J=14777574 elseif J<490431 then J,y=w[k(53322)],{}else J,y=k(53286),k(53241)J=Y[J]J=J(Y,y)H=J J=H and 14861028 or 16002024 end else if 1312665>J then J=g[C[2]]y=k(53361)Y=g[C[3]]J[y]=Y J=5999827 elseif J<1751054 then Y,I=b[1],k(53344)y=Y[I]I=g[C[1]]J=y-I I,y,E=J,k(53344),k(53293)J=g[C[2]]X,j=k(53281),k(53236)O=w[X]X=k(53300)H=O[X]u=g[C[3]]v=u[j]u=k(53345)X=v[u]i=g[C[3]]Q=k(53236)j=i[Q]i=k(53312)u=j[i]i=k(53236)j=I[i]v=u+j Q,Y=k(53293),nil i=g[C[3]]j=i[Q]i=k(53345)u=j[i]l=g[C[3]]Q=l[E]l=k(53312)i=Q[l]l=k(53293)Q=I[l]I=nil j=i+Q O=H(X,v,u,j)J[y]=O y,J={},w[k(53349)]else J,O=k(53325),I O,J=nil,X[J]J=J(X)X,J=nil,14444577 end end else if J<2123665 then if J<1830982 then I,Y=b[2],b[1]J=I and 10886670 or 9328414 elseif J<1949783 then I=k(53318)Y=w[I]I=k(53319)y=Y[I]J=15357166 I=g[C[4]]Y=y(I)elseif J<2082123 then y,J={},w[k(53233)]else rr=g[X]br=k(53272)y=rr[br]J=Jr(y)J=8209790 end else if J<2161453 then y,J={},w[k(53297)]elseif J<2287468 then J=y and 11101156 or 2646123 else J=y and 4313904 or 2133298 end end end else if J<3405266 then if 3088291>J then if 2634432>J then J=11778577>346873 g[C[1]]=J I=g[Y]H,X=k(53344),k(53245)y=I[H]J=7434409 g[C[2]]=y O=k(53344)H=g[C[3]]I=H[O]g[C[4]]=I O=g[Y]H=O[X]X=N(14272910,{Y,C[1]})O=k(53242)O=H[O]O=O(H,X)elseif 2695452>J then J,Y,y=w[k(53336)],nil,{}elseif J<2915750 then J=y and 3086720 or 13419276 else J=Y g[C[1]]=J J=13419276 end else if J<3164854 then J=g[C[1]]J=J and 12709156 or 8009304 elseif 3263963>J then y,J={},w[k(53299)]else J,y=w[k(53327)],{}end end else if J<4202728 then if 3532946>J then y=g[C[2]]Y=k(53272)J=y[Y]Y=J J=not Y J=J and 3239846 or 9371202 elseif J<3772137 then J=g[C[5]]y=J()J=5999827 elseif 4067368>J then O,Y=k(53240),b[1]H=Y[O]u=k(53280)v=w[u]u=k(53240)X=v[u]v=k(53357)O=X[v]I=H==O J,y=I and 2744781 or 4693046,I else J,y,Y=w[k(53362)],{},nil end else if 4287616>J then v=k(53280)I=g[C[1]]H=k(53269)H=I[H]H=H(I)X=w[v]v=k(53268)O=X[v]X=k(53353)I=O[X]Y=H==I y,J=Y,Y and 8654440 or 2385329 elseif J<4308790 then J=g[C[2]]y=J()J=14443334 else y,H,j=k(53314),k(53317),k(53314)J=g[C[3]]I=w[H]v,H=k(53314),k(53300)Y=I[H]X=g[C[3]]O=X[v]X=k(53236)H=O[X]O=g[C[4]]u=g[C[3]]v=u[j]u=k(53282)X=v[u]I=Y(H,O,X)J[y]=I J=2133298 end end end end end else if J<13378846 then if J<10528936 then if J<9153588 then if J>8637893 then if J<8756097 then Y=g[C[2]]y,J=Y,2385329 elseif J<8998944 then y,J={},w[k(53265)]else y,J=nil,nil g[C[1]]=J J=w[k(53311)]g[C[2]]=y y={}end else if J<8484487 then e=k(53276)p=V[e]c,e=k(53236),135 m=p*e p=k(53314)P,G=k(53293),k(53317)n=w[G]G=k(53300)e=n[G]G=m[c]F=k(53282)c=R[P]P=m[F]n=e(G,c,P)I[p]=n J,m=14109819,nil elseif J<8550270 then J=g[C[3]]y,H=k(53314),k(53317)I=w[H]H,v=k(53300),k(53314)Y=I[H]X=g[C[3]]O=X[v]X,j=k(53236),k(53314)H=O[X]O=g[C[4]]u=g[C[3]]v=u[j]u=k(53282)X=v[u]I=Y(H,O,X)J[y]=I J=8857755 elseif 8591329>J then Y=b[1]I=L()Q=k(53250)J=g[C[1]]y=J()y,J=k(53356),k(53295)J=Y[J]J=J(Y,y)y=k(53246)g[I]=J u=k(53248)H=L()J=k(53295)J=Y[J]J=J(Y,y)g[H]=J y,J,O=nil,971244>=5358341,nil g[C[2]]=J g[C[3]]=y g[C[4]]=O v=w[u]u=k(53251)X=v[u]u=g[C[5]]l=k(53242)i=g[I]j=i[Q]l=j[l]Q=M(5206487,{C[2]})i={l(j,Q)}v=X(u,r(i))l,u=k(53242),k(53248)v=w[u]u=k(53251)X=v[u]u=g[C[5]]Q=k(53339)i=g[I]j=i[Q]Q=N(5975218,{C[2],C[6],H,C[7]})l=j[l]i={l(j,Q)}l=k(53242)v=X(u,r(i))Q,u=k(53267),k(53248)v=w[u]u=k(53251)X=v[u]u=g[C[5]]i=g[C[8]]j=i[Q]l=j[l]Q=z(4271555,{I;C[6];H,C[7]})i={l(j,Q)}v=X(u,r(i))u,i=k(53248),k(53285)v=w[u]Q=N(14061688,{C[6],C[9]})u=k(53251)X=v[u]l=k(53242)u=g[C[5]]j=Y[i]l=j[l]i={l(j,Q)}v=X(u,r(i))u=k(53248)v=w[u]Q=A(6801905,{C[6],C[9]})l,i,u=k(53242),k(53252),k(53251)X=v[u]u=g[C[5]]j=Y[i]l=j[l]i={l(j,Q)}v=X(u,r(i))u=k(53248)v=w[u]Q,u=k(53326),k(53251)X=v[u]l=k(53242)u=g[C[5]]i=g[I]j=i[Q]Q=S(9140133,{C[3];C[4]})l=j[l]i={l(j,Q)}v=X(u,r(i))X=g[C[6]]J=X and 10951362 or 6874633 else Y=g[C[3]]I=k(53272)y=Y[I]J=y and 1849354 or 15357166 end end else if 9630730>J then if 9247729>J then J=g[C[1]]J=J and 14702850 or 16467846 elseif 9349808>J then H=k(53323)y=Y[H]v=k(53280)X=w[v]v=k(53323)O=X[v]X=k(53363)H=O[X]J=y==H J=J and 5539335 or 6489779 elseif J<9437073 then I,H=k(53286),k(53347)I=Y[I]I=I(Y,H)J,y=I and 6360173 or 11719589,I else J=i J=j and 6496084 or 8232879 end else if J<9911174 then J=y and 4386699 or 14021797 elseif 10179066>J then J=g[C[3]]y=J(Y)J=4133902 else Y=g[C[2]]J,y=Y and 15071034 or 6370544,Y end end end else if J>11616144 then if J>12248774 then if J<12506134 then O=g[Y]X=k(53240)H=O[X]u=k(53280)v=w[u]J,u=6164299,k(53240)X=v[u]v=k(53235)O=X[v]I=H==O y=I elseif J<13023786 then Y,y=k(53337),k(53298)J=g[C[2]]J[y]=Y y=k(53352)J=g[C[2]]H=k(53264)I=w[H]H=k(53306)Y=I[H]X,H,O=0,0,200 I=Y(H,O,X)J[y]=I J=6428023 else R,p=k(53314),k(53317)V=w[p]p=k(53300)m=V[p]n=k(53236)e=T[n]p=e*Q e,c=0,k(53282)G=T[c]n=G*Q V=m(p,e,n)I[R]+=V m=k(53314)R=I[m]e=k(53236)p=k(53317)V=w[p]p=k(53300)m=V[p]G=k(53282)p=R[e]n=R[G]e=0 V=m(p,e,n)e=k(53346)p=V[e]e=135 m=p>e J=m and 8429744 or 14109819 end else if 11685452>J then l=k(53346)Q=X[l]l=.12 i=Q>l J,u=6522472,i elseif J<11957013 then H,I=k(53313),k(53286)I=Y[I]I=I(Y,H)J,y=6360173,I else x,J=k(53276),13338417 E=T[x]T=E end end else if J>11026259 then if 11247368>J then J=g[C[2]]y=J()J=2646123 elseif J<11487276 then I=g[C[1]]y,J=I,2189608 else J,y=w[k(53259)],{}end else if J<10771502 then y=g[C[1]]J=not y g[C[1]]=J y=g[C[2]]Y=y()y=g[C[1]]J=y and 8621347 or 7577870 elseif 10833050>J then u=k(53276)y=v[u]v,j,Q=y,J,k(53321)Q,l=X[Q],-0.28 Q=Q(X,v)i=Q<l J,u=i and 11651316 or 6522472,i elseif J<10919016 then y,J={},w[k(53333)]else u=k(53318)v=w[u]J,u=6874633,k(53319)X=v[u]u=g[C[9]]v=X(u)end end end end else if J>14797498 then if 15845811>J then if J>15291834 then if J<15421807 then J=15226503 elseif J<15662615 then Y=L()u,X=k(53280),k(53240)g[Y]=b[1]O=g[Y]H=O[X]v=w[u]u=k(53240)X=v[u]v=k(53330)O=X[v]I=H==O J,y=I and 6164299 or 12303112,I else y=k(53324)J=w[y]H=g[C[1]]O={J(H)}Y,y,J=O[2],O[1],14444577 H,I=y,O[3]end else if J<14839225 then y=g[C[1]]J=not y J=J and 461372 or 10294298 elseif 14966031>J then J=k(53316)J=H[J]J=J(H)J=16002024 elseif 15148768>J then H=k(53360)I=g[C[2]]J=6370544 Y=I[H]y=Y else y,J={},w[k(53256)]end end else if J<16239245 then if 15927432>J then l=g[C[7]]E=g[C[11]]Q=l>E J,j=9502945,Q elseif 16007259>J then O,v=k(53294),k(53317)y=w[O]j,O,u=2,k(53300),2 J=y[O]O=k(53329)y=J(O)O,J=y,k(53262)y=k(53241)O[J]=y J=k(53291)X=w[v]v=k(53300)y=X[v]v=2 X=y(v,u,j)y=1 O[J]=X J=k(53249)O[J]=y J,y,v=k(53338),8146472>11283237,k(53261)O[J]=y J,u,y=k(53288),.3,2019049>4245769 O[J]=y j=.5 X=w[v]v=k(53300)y=X[v]v,J=2.5,k(53243)X=y(v,u,j)O[J]=X X,J=k(53228),k(53228)y=I[X]O[J]=y X,y,J=k(53294),Y,k(53360)O[J]=y y=w[X]X=k(53300)J=y[X]j,X=0,k(53332)y=J(X)X,J=y,k(53258)y=I X[J]=y J,Y,u,y=k(53351),nil,k(53228),O X[J]=y J,I=k(53361),nil v=w[u]u,H=k(53300),nil y=v[u]i=g[C[3]]u=0 v=y(u,j,i)y=O X[J]=v J=k(53360)X[J]=y J=O O,y,u=nil,X,k(53361)g[C[4]]=J g[C[5]]=y v=X[u]y,X,J={},nil,w[k(53315)]g[C[6]]=v else J=y and 4303677 or 14443334 end else if J<16466921 then y=g[C[1]]J=not y J=J and 3288080 or 3522453 elseif J<16564750 then y,J={},w[k(53320)]else J=y and 10063834 or 4133902 end end end else if J>14191364 then if J>14578984 then if 14645526>J then Y=b[1]H=g[C[1]]I=Y==H J,y=I and 14569766 or 16661654,I elseif J<14740212 then J=g[C[1]]y=k(53316)y=J[y]y=y(J)J,y=nil,nil g[C[1]]=J J=16467846 g[C[2]]=y else J,y=w[k(53253)],{}end else if J<14358122 then O=k(53280)Y=g[C[1]]I=k(53308)y=Y[I]H=w[O]O=k(53308)I=H[O]H=k(53263)Y=I[H]J=y==Y J=J and 153685 or 14777574 elseif J<14443955 then J,Y,y=w[k(53302)],nil,{}elseif 14507171>J then I,X=H(Y,I)J=I and 1789797 or 7231959 else I=g[C[2]]y,J=I,16661654 end end else if J>13944528 then if J<14041742 then J=g[C[6]]y=J()O=y y=g[C[7]]j=g[C[8]]u=O*j j=g[C[7]]v=u-j u=g[C[9]]X=v*u u=k(53317)J=y+X X=k(53289)g[C[7]]=J y=H[X]X,l=y,k(53228)v=w[u]u=k(53300)y=v[u]T=k(53228)Q=g[C[10]]i=Q[l]Q=k(53343)j=i[Q]i=k(53236)u=j[i]E=g[C[10]]j=0 l=E[T]E=k(53343)Q=l[E]l=k(53282)i=Q[l]v=y(u,j,i)j=k(53346)u=v[j]j=.1 y=u<j J=y and 13867260 or 10779430 elseif 14085753>J then Y,I,H=b[1],k(53301),k(53342)I=Y[I]I=I(Y,H)J,y=I and 11393580 or 2189608,I else R,Q,i,T,J,V=nil,nil,nil,nil,8232879,nil end else if 13436101>J then Y,J,y=nil,w[k(53254)],{}elseif 13537221>J then I=g[C[1]]y,J=I,16012494 elseif 13744387>J then J=y and 8539230 or 8857755 else J,y=w[k(53279)],{}end end end end end end end J=#B return r(y)end return(X(119064,{}))(r(y))end)(getfenv and getfenv()or _ENV,setmetatable,{...},unpack or table[k(53334)],getmetatable,select,newproxy)end)(...)
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local Player = Players.LocalPlayer
+
+-- Configuration
+local offsetAmount = Vector3.new(0, 0, 5.2) 
+local weightMass = 20.6
+local weightName = "CoMWeight_Object"
+local toggleKey = Enum.KeyCode.R 
+
+-- Estado persistente
+local isActive = false
+
+-- 1. Create the GUI
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "CoM_Controller"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.Parent = Player:WaitForChild("PlayerGui")
+
+-- 2. Create a Toggle Button (Visible and Mobile Friendly)
+local MainButton = Instance.new("TextButton")
+MainButton.Name = "ToggleButton"
+MainButton.Size = UDim2.new(0, 100, 0, 50)
+MainButton.Position = UDim2.new(0.5, -50, 0.8, 0) -- Default bottom-center
+MainButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.Text = "Shift CoM (R)"
+MainButton.Font = Enum.Font.SourceSansBold
+MainButton.TextSize = 18
+MainButton.Parent = ScreenGui
+
+-- Rounded corners for style
+local Corner = Instance.new("UICorner")
+Corner.CornerRadius = UDim.new(0, 8)
+Corner.Parent = MainButton
+
+--- Functionality: The Weight Logic ---
+local function applyWeight(character)
+	local root = character:FindFirstChild("HumanoidRootPart") or character:WaitForChild("HumanoidRootPart", 5)
+	if not root then return end
+
+	-- Remove qualquer peso antigo (segurança)
+	local existing = character:FindFirstChild(weightName)
+	if existing then
+		existing:Destroy()
+	end
+
+	local weight = Instance.new("Part")
+	weight.Name = weightName
+	weight.Size = Vector3.new(1, 1, 1)
+	weight.Transparency = 1 
+	weight.CanCollide = false
+	weight.CanQuery = false
+	weight.Parent = character
+
+	local weld = Instance.new("Weld")
+	weld.Part0 = root
+	weld.Part1 = weight
+	weld.C0 = CFrame.new(offsetAmount) 
+	weld.Parent = weight
+
+	weight.Massless = false
+	weight.CustomPhysicalProperties = PhysicalProperties.new(weightMass, 0.3, 0.5)
+end
+
+local function toggleWeight()
+	local character = Player.Character
+	if not character then return end
+
+	local existing = character:FindFirstChild(weightName)
+
+	if existing or isActive then
+		-- Desliga
+		if existing then
+			existing:Destroy()
+		end
+		isActive = false
+		MainButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+		print("Center of Mass: RESET")
+	else
+		-- Liga
+		applyWeight(character)
+		isActive = true
+		MainButton.BackgroundColor3 = Color3.fromRGB(0, 200, 0) -- Green when active
+		print("Center of Mass: SHIFTED")
+	end
+end
+
+-- Reaplica o peso automaticamente após respawn se estiver ativo
+Player.CharacterAdded:Connect(function(character)
+	if isActive then
+		-- Pequeno delay para garantir que o personagem esteja pronto
+		task.wait(0.1)
+		applyWeight(character)
+		MainButton.BackgroundColor3 = Color3.fromRGB(0, 200, 0)
+	else
+		MainButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	end
+end)
+
+--- Dragging Logic (Makes the UI Moveable) ---
+local dragging, dragInput, dragStart, startPos
+
+local function update(input)
+	local delta = input.Position - dragStart
+	MainButton.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+end
+
+MainButton.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = MainButton.Position
+
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+
+MainButton.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
+	end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+	if input == dragInput and dragging then
+		update(input)
+	end
+end)
+
+--- Connections ---
+
+-- PC Keybind (R)
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+	if gameProcessed then return end 
+	if input.KeyCode == toggleKey then
+		toggleWeight()
+	end
+end)
+
+-- Mobile/Click Connection
+MainButton.MouseButton1Click:Connect(toggleWeight)
