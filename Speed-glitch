@@ -1,5 +1,6 @@
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
 local Player = Players.LocalPlayer
 
 -- Configuration
@@ -21,7 +22,7 @@ ScreenGui.Parent = Player:WaitForChild("PlayerGui")
 local MainButton = Instance.new("TextButton")
 MainButton.Name = "ToggleButton"
 MainButton.Size = UDim2.new(0, 100, 0, 50)
-MainButton.Position = UDim2.new(0.5, -50, 0.8, 0) -- Default bottom-center
+MainButton.Position = UDim2.new(0.5, -50, 0.8, 0)
 MainButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 MainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 MainButton.Text = "Shift CoM (R)"
@@ -39,7 +40,6 @@ local function applyWeight(character)
 	local root = character:FindFirstChild("HumanoidRootPart") or character:WaitForChild("HumanoidRootPart", 5)
 	if not root then return end
 
-	-- Remove qualquer peso antigo (segurança)
 	local existing = character:FindFirstChild(weightName)
 	if existing then
 		existing:Destroy()
@@ -70,7 +70,6 @@ local function toggleWeight()
 	local existing = character:FindFirstChild(weightName)
 
 	if existing or isActive then
-		-- Desliga
 		if existing then
 			existing:Destroy()
 		end
@@ -78,10 +77,9 @@ local function toggleWeight()
 		MainButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 		print("Center of Mass: RESET")
 	else
-		-- Liga
 		applyWeight(character)
 		isActive = true
-		MainButton.BackgroundColor3 = Color3.fromRGB(0, 200, 0) -- Green when active
+		MainButton.BackgroundColor3 = Color3.fromRGB(0, 200, 0)
 		print("Center of Mass: SHIFTED")
 	end
 end
@@ -89,12 +87,45 @@ end
 -- Reaplica o peso automaticamente após respawn se estiver ativo
 Player.CharacterAdded:Connect(function(character)
 	if isActive then
-		-- Pequeno delay para garantir que o personagem esteja pronto
 		task.wait(0.1)
 		applyWeight(character)
 		MainButton.BackgroundColor3 = Color3.fromRGB(0, 200, 0)
 	else
 		MainButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	end
+end)
+
+--- Boost por giro rápido da câmera andando para trás ---
+local lastLook = workspace.CurrentCamera.CFrame.LookVector
+
+RunService.RenderStepped:Connect(function(dt)
+	if not isActive then 
+		lastLook = workspace.CurrentCamera.CFrame.LookVector
+		return 
+	end
+
+	local character = Player.Character
+	if not character then return end
+
+	local root = character:FindFirstChild("HumanoidRootPart")
+	local humanoid = character:FindFirstChildOfClass("Humanoid")
+	if not root or not humanoid then return end
+
+	local cam = workspace.CurrentCamera
+	local currentLook = cam.CFrame.LookVector
+	local rotSpeed = (currentLook - lastLook).Magnitude / math.max(dt, 0.001)
+	lastLook = currentLook
+
+	local moveDir = humanoid.MoveDirection
+	if moveDir.Magnitude < 0.1 then return end
+
+	-- Detecta se está andando para trás (em relação à câmera)
+	local isMovingBack = moveDir:Dot(currentLook) < -0.35
+
+	-- Só ativa se estiver girando a câmera bem rápido + andando para trás
+	if isMovingBack and rotSpeed > 8 then
+		local boostPower = math.clamp(rotSpeed * 1.8, 0, 90) -- quanto mais rápido girar, maior o boost
+		root.AssemblyLinearVelocity = root.AssemblyLinearVelocity + (moveDir.Unit * boostPower * dt * 55)
 	end
 end)
 
