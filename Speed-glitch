@@ -18,7 +18,7 @@ ScreenGui.Name = "CoM_Controller"
 ScreenGui.ResetOnSpawn = false
 ScreenGui.Parent = Player:WaitForChild("PlayerGui")
 
--- 2. Create a Toggle Button (Visible and Mobile Friendly)
+-- 2. Create a Toggle Button
 local MainButton = Instance.new("TextButton")
 MainButton.Name = "ToggleButton"
 MainButton.Size = UDim2.new(0, 100, 0, 50)
@@ -30,12 +30,11 @@ MainButton.Font = Enum.Font.SourceSansBold
 MainButton.TextSize = 18
 MainButton.Parent = ScreenGui
 
--- Rounded corners for style
 local Corner = Instance.new("UICorner")
 Corner.CornerRadius = UDim.new(0, 8)
 Corner.Parent = MainButton
 
---- Functionality: The Weight Logic ---
+--- Weight Logic ---
 local function applyWeight(character)
 	local root = character:FindFirstChild("HumanoidRootPart") or character:WaitForChild("HumanoidRootPart", 5)
 	if not root then return end
@@ -84,7 +83,6 @@ local function toggleWeight()
 	end
 end
 
--- Reaplica o peso automaticamente após respawn se estiver ativo
 Player.CharacterAdded:Connect(function(character)
 	if isActive then
 		task.wait(0.1)
@@ -95,14 +93,18 @@ Player.CharacterAdded:Connect(function(character)
 	end
 end)
 
---- Boost por giro rápido da câmera andando para trás ---
+--- Variáveis de controle de câmera e boost ---
 local lastLook = workspace.CurrentCamera.CFrame.LookVector
+local currentRotSpeed = 0
+local lastJumpBoostTime = 0
 
 RunService.RenderStepped:Connect(function(dt)
-	if not isActive then 
-		lastLook = workspace.CurrentCamera.CFrame.LookVector
-		return 
-	end
+	local cam = workspace.CurrentCamera
+	local currentLook = cam.CFrame.LookVector
+	currentRotSpeed = (currentLook - lastLook).Magnitude / math.max(dt, 0.001)
+	lastLook = currentLook
+
+	if not isActive then return end
 
 	local character = Player.Character
 	if not character then return end
@@ -111,25 +113,76 @@ RunService.RenderStepped:Connect(function(dt)
 	local humanoid = character:FindFirstChildOfClass("Humanoid")
 	if not root or not humanoid then return end
 
-	local cam = workspace.CurrentCamera
-	local currentLook = cam.CFrame.LookVector
-	local rotSpeed = (currentLook - lastLook).Magnitude / math.max(dt, 0.001)
-	lastLook = currentLook
-
+	-- Boost de velocidade andando para trás + girando rápido (já existia)
 	local moveDir = humanoid.MoveDirection
-	if moveDir.Magnitude < 0.1 then return end
-
-	-- Detecta se está andando para trás (em relação à câmera)
-	local isMovingBack = moveDir:Dot(currentLook) < -0.35
-
-	-- Só ativa se estiver girando a câmera bem rápido + andando para trás
-	if isMovingBack and rotSpeed > 8 then
-		local boostPower = math.clamp(rotSpeed * 1.8, 0, 90) -- quanto mais rápido girar, maior o boost
-		root.AssemblyLinearVelocity = root.AssemblyLinearVelocity + (moveDir.Unit * boostPower * dt * 55)
+	if moveDir.Magnitude > 0.1 then
+		local isMovingBack = moveDir:Dot(currentLook) < -0.35
+		if isMovingBack and currentRotSpeed > 8 then
+			local boostPower = math.clamp(currentRotSpeed * 1.8, 0, 90)
+			root.AssemblyLinearVelocity = root.AssemblyLinearVelocity + (moveDir.Unit * boostPower * dt * 55)
+		end
 	end
 end)
 
---- Dragging Logic (Makes the UI Moveable) ---
+-- Pulo alto na água (variável conforme o flick)
+local function tryWaterJumpBoost()
+	local character = Player.Character
+	if not character then return end
+
+	local root = character:FindFirstChild("HumanoidRootPart")
+	local humanoid = character:FindFirstChildOfClass("Humanoid")
+	if not root or not humanoid then return end
+
+	-- Só funciona se estiver na água / nadando
+	local state = humanoid:GetState()
+	local inWater = state == Enum.HumanoidStateType.Swimming 
+		or humanoid.FloorMaterial == Enum.Material.Water
+		or root.Position.Y < workspace.Terrain.WaterWaveSize -- fallback simples
+
+	if not inWater then return end
+
+	-- Evita spam de boost
+	local now = tick()
+	if now - lastJumpBoostTime < 0.45 then return end
+	lastJumpBoostTime = now
+
+	-- Força base moderada + variação pelo flick
+	local baseBoost = 38          -- pulo alto mas controlado
+	local flickBonus = math.clamp(currentRotSpeed * 2.2, 0, 28) -- quanto mais flick, mais alto
+	local totalBoost = baseBoost + flickBonus
+
+	-- Aplica o impulso para cima
+	local vel = root.AssemblyLinearVelocity
+	root.AssemblyLinearVelocity = Vector3.new(vel.X, math.max(vel.Y, 0) + totalBoost, vel.Z)
+end
+
+-- Detecta o pulo (teclado e mobile)
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+	if gameProcessed then return end
+
+	if input.KeyCode == Enum.KeyCode.Space or input.KeyCode == Enum.KeyCode.ButtonA then
+		tryWaterJumpBoost()
+	end
+end)
+
+-- Também detecta quando o Humanoid realmente pula (mais confiável)
+local function setupHumanoid(character)
+	local humanoid = character:WaitForChild("Humanoid", 5)
+	if not humanoid then return end
+
+	humanoid.StateChanged:Connect(function(_, newState)
+		if newState == Enum.HumanoidStateType.Jumping then
+			tryWaterJumpBoost()
+		end
+	end)
+end
+
+if Player.Character then
+	setupHumanoid(Player.Character)
+end
+Player.CharacterAdded:Connect(setupHumanoid)
+
+--- Dragging Logic ---
 local dragging, dragInput, dragStart, startPos
 
 local function update(input)
@@ -164,8 +217,6 @@ UserInputService.InputChanged:Connect(function(input)
 end)
 
 --- Connections ---
-
--- PC Keybind (R)
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
 	if gameProcessed then return end 
 	if input.KeyCode == toggleKey then
@@ -173,5 +224,4 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
 	end
 end)
 
--- Mobile/Click Connection
 MainButton.MouseButton1Click:Connect(toggleWeight)
