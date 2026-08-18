@@ -113,13 +113,13 @@ RunService.RenderStepped:Connect(function(dt)
 	local humanoid = character:FindFirstChildOfClass("Humanoid")
 	if not root or not humanoid then return end
 
-	-- Boost de velocidade (andar para trás + girar rápido)
+	-- Boost de velocidade (andar para trás + girar rápido) - agora mais controlado
 	local moveDir = humanoid.MoveDirection
 	if moveDir.Magnitude > 0.1 then
 		local isMovingBack = moveDir:Dot(currentLook) < -0.35
 		if isMovingBack and currentRotSpeed > 8 then
-			local boostPower = math.clamp(currentRotSpeed * 1.8, 0, 90)
-			root.AssemblyLinearVelocity = root.AssemblyLinearVelocity + (moveDir.Unit * boostPower * dt * 55)
+			local boostPower = math.clamp(currentRotSpeed * 1.15, 0, 52) -- reduzido
+			root.AssemblyLinearVelocity = root.AssemblyLinearVelocity + (moveDir.Unit * boostPower * dt * 42)
 		end
 	end
 end)
@@ -140,7 +140,7 @@ local function isReallyInWater(humanoid, root)
 	return false
 end
 
--- Pulo alto **somente na água**
+-- Pulo alto somente na água (também mais controlado)
 local function tryWaterJumpBoost()
 	local character = Player.Character
 	if not character then return end
@@ -151,14 +151,12 @@ local function tryWaterJumpBoost()
 
 	if not isReallyInWater(humanoid, root) then return end
 
-	-- Cooldown anti-spam
 	local now = tick()
 	if now - lastJumpBoostTime < 0.5 then return end
 	lastJumpBoostTime = now
 
-	-- Força moderada + bônus de flick
-	local baseBoost = 36
-	local flickBonus = math.clamp(currentRotSpeed * 2.0, 0, 24)
+	local baseBoost = 29
+	local flickBonus = math.clamp(currentRotSpeed * 1.35, 0, 16)
 	local totalBoost = baseBoost + flickBonus
 
 	local vel = root.AssemblyLinearVelocity
@@ -174,13 +172,12 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
 	end
 end)
 
--- Detecta transição de estado (mais preciso para sair da água)
+-- Detecta transição de estado
 local function setupHumanoid(character)
 	local humanoid = character:WaitForChild("Humanoid", 5)
 	if not humanoid then return end
 
 	humanoid.StateChanged:Connect(function(oldState, newState)
-		-- Só dá boost se estava nadando e agora pulou / saiu da água
 		if oldState == Enum.HumanoidStateType.Swimming and 
 		   (newState == Enum.HumanoidStateType.Jumping or newState == Enum.HumanoidStateType.Freefall) then
 			tryWaterJumpBoost()
