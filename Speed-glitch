@@ -93,7 +93,7 @@ Player.CharacterAdded:Connect(function(character)
 	end
 end)
 
---- Variáveis de controle de câmera e boost ---
+--- Variáveis de câmera ---
 local lastLook = workspace.CurrentCamera.CFrame.LookVector
 local currentRotSpeed = 0
 local lastJumpBoostTime = 0
@@ -113,7 +113,7 @@ RunService.RenderStepped:Connect(function(dt)
 	local humanoid = character:FindFirstChildOfClass("Humanoid")
 	if not root or not humanoid then return end
 
-	-- Boost de velocidade andando para trás + girando rápido (já existia)
+	-- Boost de velocidade (andar para trás + girar rápido)
 	local moveDir = humanoid.MoveDirection
 	if moveDir.Magnitude > 0.1 then
 		local isMovingBack = moveDir:Dot(currentLook) < -0.35
@@ -124,7 +124,23 @@ RunService.RenderStepped:Connect(function(dt)
 	end
 end)
 
--- Pulo alto na água (variável conforme o flick)
+-- Função que verifica se está realmente na água
+local function isReallyInWater(humanoid, root)
+	if not humanoid or not root then return false end
+
+	local state = humanoid:GetState()
+	if state == Enum.HumanoidStateType.Swimming then
+		return true
+	end
+
+	if humanoid.FloorMaterial == Enum.Material.Water then
+		return true
+	end
+
+	return false
+end
+
+-- Pulo alto **somente na água**
 local function tryWaterJumpBoost()
 	local character = Player.Character
 	if not character then return end
@@ -133,30 +149,23 @@ local function tryWaterJumpBoost()
 	local humanoid = character:FindFirstChildOfClass("Humanoid")
 	if not root or not humanoid then return end
 
-	-- Só funciona se estiver na água / nadando
-	local state = humanoid:GetState()
-	local inWater = state == Enum.HumanoidStateType.Swimming 
-		or humanoid.FloorMaterial == Enum.Material.Water
-		or root.Position.Y < workspace.Terrain.WaterWaveSize -- fallback simples
+	if not isReallyInWater(humanoid, root) then return end
 
-	if not inWater then return end
-
-	-- Evita spam de boost
+	-- Cooldown anti-spam
 	local now = tick()
-	if now - lastJumpBoostTime < 0.45 then return end
+	if now - lastJumpBoostTime < 0.5 then return end
 	lastJumpBoostTime = now
 
-	-- Força base moderada + variação pelo flick
-	local baseBoost = 38          -- pulo alto mas controlado
-	local flickBonus = math.clamp(currentRotSpeed * 2.2, 0, 28) -- quanto mais flick, mais alto
+	-- Força moderada + bônus de flick
+	local baseBoost = 36
+	local flickBonus = math.clamp(currentRotSpeed * 2.0, 0, 24)
 	local totalBoost = baseBoost + flickBonus
 
-	-- Aplica o impulso para cima
 	local vel = root.AssemblyLinearVelocity
 	root.AssemblyLinearVelocity = Vector3.new(vel.X, math.max(vel.Y, 0) + totalBoost, vel.Z)
 end
 
--- Detecta o pulo (teclado e mobile)
+-- Detecta tecla de pulo
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
 	if gameProcessed then return end
 
@@ -165,13 +174,15 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
 	end
 end)
 
--- Também detecta quando o Humanoid realmente pula (mais confiável)
+-- Detecta transição de estado (mais preciso para sair da água)
 local function setupHumanoid(character)
 	local humanoid = character:WaitForChild("Humanoid", 5)
 	if not humanoid then return end
 
-	humanoid.StateChanged:Connect(function(_, newState)
-		if newState == Enum.HumanoidStateType.Jumping then
+	humanoid.StateChanged:Connect(function(oldState, newState)
+		-- Só dá boost se estava nadando e agora pulou / saiu da água
+		if oldState == Enum.HumanoidStateType.Swimming and 
+		   (newState == Enum.HumanoidStateType.Jumping or newState == Enum.HumanoidStateType.Freefall) then
 			tryWaterJumpBoost()
 		end
 	end)
